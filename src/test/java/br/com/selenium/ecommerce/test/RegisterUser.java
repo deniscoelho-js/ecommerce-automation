@@ -11,9 +11,13 @@ public class RegisterUser {
 	@Test
 	public void register() {
 		WebDriver driver = new ChromeDriver();
-		//*******************************************************************************************
+
+		// *******************************************************************************************
+		// 1 e 2
 		driver.get("http://automationexercise.com/");
-		//*******************************************************************************************
+
+		// *******************************************************************************************
+		// 3
 		String title = driver.getCurrentUrl();
 		System.out.println(title);
 
@@ -47,7 +51,7 @@ public class RegisterUser {
 		month.selectByVisibleText("May");
 		year.selectByVisibleText("1988");
 
-		WebElement newsletter = driver.findElement(By.id("newsletter"));
+		WebElement newsletter = driver.findElement(By.xpath("//*[@id=\"newsletter\"]"));
 		newsletter.click();
 		WebElement specialOffers = driver.findElement(By.xpath("//*[@id=\"optin\"]"));
 		specialOffers.click();
