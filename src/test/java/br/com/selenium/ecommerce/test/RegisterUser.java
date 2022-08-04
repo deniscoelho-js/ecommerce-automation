@@ -1,7 +1,5 @@
 package br.com.selenium.ecommerce.test;
 
-import java.time.Duration;
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
