@@ -1,4 +1,4 @@
-package br.com.selenium.test.selenium;
+package br.com.selenium.Selenium;
 
 import java.time.Duration;
 
