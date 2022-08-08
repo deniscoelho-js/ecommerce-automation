@@ -1,3 +1,2 @@
-#  selenium
+#  Selenium Automation Practice Exercises
 
-Add instructions for project developers here.
