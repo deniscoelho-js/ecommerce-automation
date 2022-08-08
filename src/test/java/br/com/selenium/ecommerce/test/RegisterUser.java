@@ -1,5 +1,7 @@
 package br.com.selenium.ecommerce.test;
 
+import java.time.Duration;
+
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -11,6 +13,7 @@ public class RegisterUser {
 	@Test
 	public void register() {
 		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
 
 		// *******************************************************************************************
 		// 1 e 2
@@ -38,7 +41,7 @@ public class RegisterUser {
 		WebElement emailField = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[3]"));
 		WebElement signup = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/button"));
 		nameField.sendKeys("Maria");
-		emailField.sendKeys("maria3@email.com");
+		emailField.sendKeys("maria5@email.com");
 		signup.click();
 
 		// *******************************************************************************************
