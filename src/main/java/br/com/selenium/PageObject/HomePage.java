@@ -15,10 +15,10 @@ public class HomePage {
     @FindBy(how = How.CSS, using = "#Duvidas")
     private WebElement duvidas;
 
-    @FindBy(how = How.ID, using = "strBusca")
+    @FindBy(how = How.CSS, using = "#strBusca")
     private WebElement barraPesquisa;
 
-    @FindBy(how = How.ID, using = "btnOK")
+    @FindBy(how = How.CSS, using = "#btnOK")
     private WebElement botaoPesquisar;
 
     public HomePage(WebDriver driver){
