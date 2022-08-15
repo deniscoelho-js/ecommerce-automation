@@ -9,7 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class RegisterUser {
+public class RegisterUser_1 {
 	@Test
 	public void register() {
 		WebDriver driver = new ChromeDriver();
@@ -41,7 +41,7 @@ public class RegisterUser {
 		WebElement emailField = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[3]"));
 		WebElement signup = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/button"));
 		nameField.sendKeys("Maria");
-		emailField.sendKeys("maria5@email.com");
+		emailField.sendKeys("maria6@email.com");
 		signup.click();
 
 		// *******************************************************************************************

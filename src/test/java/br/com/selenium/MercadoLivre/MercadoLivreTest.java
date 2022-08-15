@@ -1,10 +1,10 @@
-package br.com.selenium.Americanas;
+package br.com.selenium.MercadoLivre;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
-public class AmericanasTest {
+public class MercadoLivreTest {
     private WebDriver driver;
 
     @Before

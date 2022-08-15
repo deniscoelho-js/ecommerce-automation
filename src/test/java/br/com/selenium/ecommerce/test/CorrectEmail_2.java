@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class CorrectEmail {
+public class CorrectEmail_2 {
 	@Test
 	public void correct() {
 		WebDriver driver = new ChromeDriver();

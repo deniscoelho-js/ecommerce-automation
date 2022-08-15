@@ -1,4 +1,4 @@
-package br.com.selenium.Americanas;
+package br.com.selenium.MercadoLivre;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
