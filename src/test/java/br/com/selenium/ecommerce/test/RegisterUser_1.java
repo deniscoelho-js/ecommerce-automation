@@ -41,7 +41,7 @@ public class RegisterUser_1 {
 		WebElement emailField = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/input[3]"));
 		WebElement signup = driver.findElement(By.xpath("//*[@id=\"form\"]/div/div/div[3]/div/form/button"));
 		nameField.sendKeys("Maria");
-		emailField.sendKeys("maria6@email.com");
+		emailField.sendKeys("maria8@email.com");
 		signup.click();
 
 		// *******************************************************************************************

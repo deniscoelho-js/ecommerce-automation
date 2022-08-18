@@ -30,4 +30,6 @@ public class AmazonTest {
         AmazonPage amazonPage = new AmazonPage(driver);
         amazonPage.searchProduct(productItem, category);
     }
+
+//    parei na aula 2, tenho que assistir a aula 3 em diante
 }
