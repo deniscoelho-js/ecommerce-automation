@@ -6,8 +6,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
 public class HomePage {
     private WebDriver driver;
 
@@ -26,19 +24,19 @@ public class HomePage {
     private WebElement livro;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"add-to-cart-button\"]")
-    private WebElement adiciona;
+    private WebElement btnAdiciona;
 
     @FindBy(how = How.XPATH, using = "//span[@class='a-truncate-cut'][contains(.,'O Verdadeiro Valor de TI')]")
-    private WebElement adicionadoAoCarrinho;
+    private WebElement validaAdicionadoAoCarrinho;
 
     @FindBy(how = How.XPATH, using = "//*[@id=\"sw-gtc\"]/span/a")
     private WebElement irParaCarrinho;
 
     @FindBy(how = How.XPATH, using = "//input[@value='Excluir']")
-    private WebElement exclui;
+    private WebElement btnExcluiDoCarrinho;
 
     @FindBy(how = How.XPATH, using = "//span[contains(.,'O Verdadeiro Valor de TI  Abre em uma nova aba  foi removido de Carrinho de compras.')]")
-    private WebElement elementoExcluido;
+    private WebElement validaElementoExcluido;
 
     public void fazerPesquisa(String textoPesquisa){
         barraPesquisa.sendKeys(textoPesquisa);
@@ -50,7 +48,7 @@ public class HomePage {
     }
 
     public void adicinarAoCarrinho(){
-        adiciona.click();
+        btnAdiciona.click();
     }
 
     public void irParaCarrinhoDeComparas(){
@@ -58,17 +56,17 @@ public class HomePage {
     }
 
     public String VerificarSeEstaNoCarrinho(){
-        System.out.println(adicionadoAoCarrinho.getText());
-        return adicionadoAoCarrinho.getText();
+        System.out.println(validaAdicionadoAoCarrinho.getText());
+        return validaAdicionadoAoCarrinho.getText();
     }
 
     public void excluirDoCarrinho(){
-        exclui.click();
+        btnExcluiDoCarrinho.click();
     }
 
     public String verificarSeFoiExcluido(){
-        System.out.println(elementoExcluido.getText());
-        return elementoExcluido.getText();
+        System.out.println(validaElementoExcluido.getText());
+        return validaElementoExcluido.getText();
     }
 
 }

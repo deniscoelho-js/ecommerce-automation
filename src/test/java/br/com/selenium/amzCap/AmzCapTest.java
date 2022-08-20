@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 
+
 public class AmzCapTest {
     private WebDriver driver;
 
@@ -17,8 +18,9 @@ public class AmzCapTest {
 
     @Test
     public void buscarItem(){
-        String texto = "O Verdadeiro Valor de TI";
-        String excluido = "O Verdadeiro Valor de TI foi removido de Carrinho de compras.";
+        String texto = Mensagem.O_VERDADEIRO_VALOR_DO_TI;
+        String excluido = Mensagem.O_VERDADEIRO_VALOR_DO_TI_FOI_REMOVIDO;
+
         HomePage homePage = new HomePage(driver);
         homePage.fazerPesquisa(texto);
         homePage.clicaNoLivro();
@@ -27,6 +29,11 @@ public class AmzCapTest {
         Assert.assertEquals(texto, homePage.VerificarSeEstaNoCarrinho());
         homePage.excluirDoCarrinho();
         Assert.assertEquals(excluido, homePage.verificarSeFoiExcluido());
+    }
+
+    @After
+    public void fecharBrowser(){
+        driver.close();
     }
 
 }
